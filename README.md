@@ -6,3 +6,7 @@
 ---
 ![Getting Started](./images/frontend-examples-1.png)
 ---
+### 2. Egghead Arayüzü
+---
+![Getting Started](./images/frontend-examples-2.png)
+---
