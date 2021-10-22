@@ -26,8 +26,8 @@ body {
 	line-height: 1;
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased;
-    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-	background: #646566;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    background: #F4F7F9;
 }
 ol, ul {
 	list-style: none;
