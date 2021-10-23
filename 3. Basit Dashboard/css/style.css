@@ -1,0 +1,516 @@
+:root {
+    --color: #ca34cab0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Graphik';
+    src: url('../font/Graphik-Medium.woff2') format('woff2'),
+        url('../font/Graphik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url('../font/Graphik-Regular.woff2') format('woff2'),
+        url('../font/Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url('../font/Graphik-Light.woff2') format('woff2'),
+        url('../font/Graphik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    font-family: Graphik, sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+} 
+
+/* SIDEBAR */
+.sidebar {
+    width: 252px;
+    background: var(--color);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    padding: 35px 0 65px 42px;
+}
+
+.sidebar .logo a {
+    display: inline;
+}
+
+.sidebar .logo a i {
+    font-size: 36px;
+    color: rgba(255, 255, 255, .55);
+}
+
+.sidebar .logo a i:hover {
+    color: #fff;
+}
+
+.sidebar .menu ul li a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 40px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.sidebar .menu ul li a:hover {
+    color: #fff;
+}
+
+.sidebar .menu ul li.active a {
+    color: #fff;
+    background: linear-gradient(to left, transparent, rgba(255,255,255,.08));
+    /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+    text-shadow: 0 2px 4px rgb(0, 0, 0,.5); */
+} 
+
+.sidebar .storage {
+    padding: 0 40px 35px;
+    margin-top: auto;
+}
+
+.sidebar .storage .title {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    align-items: center;
+}
+
+.sidebar .storage .title i {
+    margin-right: 8px;
+}
+
+.sidebar .storage .title .percent {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .8);
+    font-weight: normal;
+    margin-left: auto;
+}
+
+.sidebar .storage .bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, .3);
+    margin-top: 12px;
+}
+
+.sidebar .storage .bar span {
+    width: auto;
+    height: 6px;
+    border-radius: 6px;
+    background: #F8D9AF;
+    display: block;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    display: flex;
+}
+
+.content .inner {
+    flex: 1;
+    padding: 32px 65px;
+    overflow: auto;
+}
+
+.content .inner .search {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.content .inner .search label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8F94B8;
+}
+
+.content .inner .search input {
+    width: 340px;
+    height: 44px;
+    border-radius: 44px;
+    background: rgba(202, 206, 231, .14);
+    font-size: 14px;
+    padding: 0 20px 0 50px;
+    box-sizing: border-box;
+}
+
+.content .inner .search input::placeholder {
+    color: #8F94B8;
+}
+
+.content .inner .inner-box {
+    margin-bottom: 60px;
+}
+
+.content .inner .inner-box .projects {
+    display: flex;
+    margin: 0 -7px;
+}
+
+.content .inner .inner-box .box {
+    flex: 1;
+    margin: 0 7px;
+    height: 145px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.content .inner .inner-box .box.active {
+    background: #F7F8FB;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .inner .inner-box .box.active .box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .inner .inner-box .box.active .box-top i {
+    color: #FBD199;
+    font-size: 24px;
+}
+
+.content .inner .inner-box .box.active .box-title {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+}
+
+.content .inner .inner-box .box.active .box-bar {
+    width: 100%;
+    height: 5px;
+    background: #DDE2EF;
+    border-radius: 5px;
+}
+
+.content .inner .inner-box .box.active .box-bar span {
+    width: auoto;
+    height: 5px;
+    background: var(--color);
+    border-radius: 5px;
+    position: relative;
+    display: block;
+}
+
+.content .inner .inner-box .box.active .box-bar span::before {
+    content: attr(title);
+    position: absolute;
+    top: -15px;
+    right: -6px;
+    font-size: 10px;
+    color: var(--color);
+}
+
+.content .inner .inner-box .box.active .box-title .name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0E1B42;
+    padding-bottom: 4px;
+}
+
+.content .inner .inner-box .box.active .box-title .task {
+    font-size: 12px;
+    color: #8186AD;
+    margin-bottom: 12px;
+}
+
+.content .inner .inner-box .box.active .box-top .box-shared {
+    display: flex;
+}
+
+.content .inner .inner-box .box.active .box-top .box-shared img {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    border-radius: 20px;
+    border: 2px solid #F7F8FB;
+}
+
+.content .inner .inner-box .box.empty {
+    border: 2px dashed #E4E8F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .inner .inner-box .box.empty i {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #F7F8FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: var(--color);
+}
+
+.content .inner .inner-box .box.empty .text {
+    font-size: 12px;
+    color: #132046;
+}
+
+.content .content-title {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #F6F7FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.content .content-title::before {
+    content: '';
+    width: 38px;
+    height: 4px;
+    background: #C4E2E6;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.content .content-title h4 {
+    font-size: 20px;
+    color: #0E1B42;
+    font-weight: 500;
+}
+
+.content .content-title a {
+    font-size: 14px;
+    color: #8186AD;
+}
+
+.content .content-title a i {
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+.content .inner .inner-box .recents ul li {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content .inner .inner-box .recents ul li:hover {
+    background: #F4F5FA;
+}
+
+.content .inner .inner-box .recents ul li a.link {
+    flex: 1;
+    font-size: 14px;
+    color: #0E1B42;
+    display: flex;
+    align-items: center;
+}
+
+.content .inner .inner-box .recents ul li a.link i.fa-folder {
+    font-size: 30px;
+    color: #FBD199;
+    margin-right: 10px;
+}
+
+.content .inner .inner-box .recents ul li a.link i.icon {
+    width: 30px;
+    height: 30px;
+    background: var(--color);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.content .inner .inner-box .recents ul li a.link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.content .inner .inner-box .recents ul li .visibility,
+.content .inner .inner-box .recents ul li .more, 
+.content .inner .inner-box .recents ul li .size {
+    font-size: 12px;
+    color: #8186AD;
+    width: 100px;
+    text-align: center;
+}
+
+.content .inner .inner-box .recents ul li .more {
+    text-align: right;
+    color: #B1B4CE;
+    opacity: 0;
+    font-size: 16px;
+}
+
+.content .inner .inner-box .recents ul li:hover .more {
+    opacity: 1;
+}
+
+.content .rightbar {
+    width: 360px;
+    padding: 32px 0;
+    border-left: 2px solid #F6E7FA;
+}
+
+.content .rightbar .info {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 60px;
+}
+
+.content .rightbar .info .profile {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.content .rightbar .info .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.content .rightbar .info .notification {
+    display: flex;
+    margin-right: 20px;
+}
+
+.content .rightbar .info .notification i {
+    font-size: 25px;
+    margin-right: 10px;
+    line-height: 40px;
+    color: #8F94B8;
+}
+
+.content .rightbar .info .notification i:hover {
+    color: #111;
+}
+
+.content .rightbar .info .notification .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: orange;
+    font-size: 11px;
+    display: inline;
+    margin-left: -10px;
+}
+
+.content .rightbar .info .profile .name {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.content .rightbar .info .profile a i {
+    color: #8186AD;
+}
+
+.content .rightbar .info .profile a i:hover {
+    color: #111;
+}
+
+.content .rightbar .activities {
+    padding: 0 40px;
+}
+
+.content .rightbar .activities .content-title h4 {
+    font-size: 20px;
+    color: #0E1B42;
+    font-weight: 500;
+}

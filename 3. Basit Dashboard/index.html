@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+    
+        <div class="logo">
+            <a href="#">
+                <i class="fa fa-fan"></i>
+            </a>
+        </div>
+    
+        <nav class="menu">
+            <ul>
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Tasks</a>
+                </li>
+                <li>
+                    <a href="#">Files</a>
+                </li>
+                <li>
+                    <a href="#">Teams</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="storage">
+            <div class="title">
+                <i class="fa fa-cloud"></i>
+                Storage
+                <div class="percent">60%</div>
+            </div>
+            <div class="bar">
+                <span style="width: 60%;"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="inner">
+
+            <div class="search">
+                <input type="text" placeholder="Search..">
+                <label>
+                    <i class="fa fa-search"></i>
+                </label>
+            </div>
+
+            <div class="inner-box">
+
+                <div class="content-title">
+                    <h4>Projects</h4>
+                    <a href="#">
+                        View All
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="projects">
+
+                    <a class="box active">
+                        <span class="box-top">
+                            <i class="fa fa-folder"></i>
+                            <span class="box-shared">
+                                <img src="https://avatars.githubusercontent.com/u/44196434?v=4" alt="">
+                                <img src="https://avatars.githubusercontent.com/u/44196434?v=4" alt="">
+                                <img src="https://avatars.githubusercontent.com/u/44196434?v=4" alt="">
+                            </span>
+                        </span>
+
+                        <span class="box-title">
+                            <span class="name">Nucleus Tech</span>
+                            <span class="task">16 tasks</span>
+                        </span>
+
+                        <span class="box-bar">
+                            <span style="width: 70%;" title="70%"></span>
+                        </span>
+                    </a>
+
+                    <a class="box active">
+                        <span class="box-top">
+                            <i class="fa fa-folder-plus"></i>
+                            <span class="box-shared">
+                                <img src="https://avatars.githubusercontent.com/u/44196434?v=4" alt="">
+                                <img src="https://avatars.githubusercontent.com/u/44196434?v=4" alt="">
+                            </span>
+                        </span>
+
+                        <span class="box-title">
+                            <span class="name">Summit AI</span>
+                            <span class="task">5 tasks</span>
+                        </span>
+
+                        <span class="box-bar">
+                            <span style="width: 90%;" title="90%"></span>
+                        </span>
+                    </a>
+
+                    <a class="box empty">
+                        <i class="fa fa-plus"></i>
+                        <span class="text">Add New Project</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="inner-box">
+
+                <div class="content-title">
+                    <h4>Recent</h4>
+                    <a href="#">
+                        View All
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="recents">
+                    <ul>
+                        <li>
+                            <a href="#" class="link"> 
+                                <i class="fa fa-folder"></i>
+                                Design Assets
+                            </a>
+                            <div class="visibility">Only You</div>
+                            <div class="size">2.4 GB</div>
+                            <a href="#" class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"class="link">
+                                <i class="fa fa-folder"></i>
+                                Team Photos
+                            </a>
+                            <div class="visibility">5 Members</div>
+                            <div class="size">5.9 GB</div>
+                            <a href="#" class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"class="link">
+                                <i class="fa fa-music icon"></i>
+                                01-Ahiyan_Kurtulmak.mp3
+                            </a>
+                            <div class="visibility">Only You</div>
+                            <div class="size">2.8 MB</div>
+                            <a href="#" class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"class="link">
+                                <i class="fa fa-microphone icon"></i>
+                                23_Ekim_Toplanti.mp3
+                            </a>
+                            <div class="visibility">Only You</div>
+                            <div class="size">5.8 MB</div>
+                            <a href="#" class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"class="link">
+                                <img src="https://avatars.githubusercontent.com/u/44196434?v=4" alt="">
+                                Ahmet_Osman_Sezgin.jpg
+                            </a>
+                            <div class="visibility">Only You</div>
+                            <div class="size">3.4 MB</div>
+                            <a href="#" class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rightbar">
+
+            <div class="info">
+                
+                <a href="#" class="notification">
+                    <i class="fa fa-bell"></i>
+                    <div class="dot"></div>
+                </a>
+                <div class="profile">
+                    <img src="https://avatars.githubusercontent.com/u/44196434?v=4" alt="">
+                    <span class="name">Ahmet</span>
+                    <a href="#">
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="activities">
+                <div class="content-title">
+                    <h4>Activities</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
