@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate.style</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="intro">
+        <div class="intro-left">
+            <h1>Animate.css</h1>
+            <h2>Just-add-water CSS animations</h2>
+            <a href="#" class="btn" id="intro-sidebar-open-btn">See animations</a>
+        </div>
+        <div class="intro-sidebar" id="intro-sidebar">
+            <a href="#" class="btn" id="intro-sidebar-close-btn">Close list</a>
+            <section>
+                <h3>Attention seekers</h3>
+                <ul>
+                    <li>
+                        <a href="#">bounce</a>
+                    </li>
+                    <li>
+                        <a href="#">flash</a>
+                    </li>
+                    <li>
+                        <a href="#">pulse</a>
+                    </li>
+                    <li>
+                        <a href="#">rubberBand</a>
+                    </li>
+                    <li>
+                        <a href="#">shakeX</a>
+                    </li>
+                    <li>
+                        <a href="#">shakeY</a>
+                    </li>
+                    <li>
+                        <a href="#">headSHake</a>
+                    </li>
+                    <li>
+                        <a href="#">swing</a>
+                    </li>
+                    <li>
+                        <a href="#">tada</a>
+                    </li>
+                    <li>
+                        <a href="#">wobble</a>
+                    </li>
+                    <li>
+                        <a href="#">jello</a>
+                    </li>
+                    <li>
+                        <a href="#">heartBeat</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Attention seekers</h3>
+                <ul>
+                    <li>
+                        <a href="#">bounce</a>
+                    </li>
+                    <li>
+                        <a href="#">flash</a>
+                    </li>
+                    <li>
+                        <a href="#">pulse</a>
+                    </li>
+                    <li>
+                        <a href="#">rubberBand</a>
+                    </li>
+                    <li>
+                        <a href="#">shakeX</a>
+                    </li>
+                    <li>
+                        <a href="#">shakeY</a>
+                    </li>
+                    <li>
+                        <a href="#">headSHake</a>
+                    </li>
+                    <li>
+                        <a href="#">swing</a>
+                    </li>
+                    <li>
+                        <a href="#">tada</a>
+                    </li>
+                    <li>
+                        <a href="#">wobble</a>
+                    </li>
+                    <li>
+                        <a href="#">jello</a>
+                    </li>
+                    <li>
+                        <a href="#">heartBeat</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Attention seekers</h3>
+                <ul>
+                    <li>
+                        <a href="#">bounce</a>
+                    </li>
+                    <li>
+                        <a href="#">flash</a>
+                    </li>
+                    <li>
+                        <a href="#">pulse</a>
+                    </li>
+                    <li>
+                        <a href="#">rubberBand</a>
+                    </li>
+                    <li>
+                        <a href="#">shakeX</a>
+                    </li>
+                    <li>
+                        <a href="#">shakeY</a>
+                    </li>
+                    <li>
+                        <a href="#">headSHake</a>
+                    </li>
+                    <li>
+                        <a href="#">swing</a>
+                    </li>
+                    <li>
+                        <a href="#">tada</a>
+                    </li>
+                    <li>
+                        <a href="#">wobble</a>
+                    </li>
+                    <li>
+                        <a href="#">jello</a>
+                    </li>
+                    <li>
+                        <a href="#">heartBeat</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="intro-footer">
+            Another thing from  <a href="#">Daniel</a> and <a href="#">friends</a> 
+        </div>
+    </div>
+
+    <main id="documentation">
+        <header>
+            <div class="container">
+                <h2>
+                    <a href="#documentation">Documentation</a>
+                </h2>
+            </div>
+        </header>
+        <article>
+            <a href="#" id="hamburger-menu-btn" class="hamburger">
+                <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="1.5" x2="23" y2="1.5" stroke="#351C75" stroke-width="3"></line>
+                  <line y1="7.5" x2="23" y2="7.5" stroke="#351C75" stroke-width="3"></line>
+                  <line y1="13.5" x2="23" y2="13.5" stroke="#351C75" stroke-width="3"></line>
+                </svg>
+              </a>
+            <div class="container">
+                <div class="content">
+                    <section>
+                        <blockquote>Animate.css v4 brought some breaking changes, please refer to the migration guide before updating from v3.x and under.</blockquote>
+                        <p>Animate.css is a library of ready-to-use, cross-browser animations for use in your web projects. Great for emphasis, home pages, sliders, and attention-guiding hints.</p>
+                    </section>
+                    <!-- Installation and usage -->
+                    <section id="usage">
+                        <h2>Installation and usage</h2>
+                        <h3>Installing</h3>
+                        <p>Install with npm:</p>
+                        <pre>$ npm install animate.css --save</pre>
+                        <p>Or install with Yarn (this will only work with appropriate tooling like Webpack, Parcel, etc. If you are not using any tool for packing or bundling your code, you can simply use the CDN method below):</p>
+                        <pre>$ yarn add animate.css</pre>
+                        <p>Import it into your file:</p>
+                        <pre>import 'animate.css';</pre>
+                        <p>Or add it directly to your webpage using a CDN:</p>
+                        <pre>
+&lt;head&gt;
+    &lt;link
+        rel=&quot;stylesheet&quot;
+        href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css&quot;
+    /&gt;
+&lt;/head&gt;
+                        </pre>
+                        <h3>Basic usage</h3>
+                        <p>After installing Animate.css, add the class <code>animate__animated</code> to an element, along with any of the animation names (don't forget the <code>animate__</code> prefix!):</p>
+                        <pre>&lt;h1 class="animate__animated animate__bounce">An animated element&lt;/h1></pre>
+                        <p>That's it! You've got a CSS animated element. Super!</p>
+                        <blockquote>Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the best practices and gotchas sections to bring your web-things to life in the best way possible.</blockquote>
+                        <h3>Using <code>@keyframes</code></h3>
+                        <p>Even though the library provides you a few helper classes like the animated class to get you up running quickly, you can directly use the provided animations keyframes. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.</p>
+                        <p>Example: </p>
+                        <pre>
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+                        </pre>
+                        <p>Be aware that some animations are dependent on the animation-timing property set on the animation's class. Changing or not declaring it might lead to unexpected results.</p>
+                    </section>
+                    <!-- Utility classes -->
+                    <section id="utility">
+                        <h2>Utility classes</h2>
+                        <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+                        <h3>Delay classes</h3>
+                        <p>You can add delays directly on the element's class attribute, just like this:</p>
+                        <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+                        <p>The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:</p>
+                        <pre>
+/* All delay classes will take 2x longer to start */
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
+                        </pre>
+                        <h3>Slow, slower, fast, and Faster classes</h3>
+                        <p>You can control the speed of the animation by adding these classes, as below:</p>
+                        <pre>
+                            &lt;div class="animate__animated animate__bounce animate__faster">Example&lt;/div>
+                        </pre>
+                    </section>
+                    <!-- Best practises -->
+                    <section id="practise">
+                        <h2>Best practises</h2>
+                        <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+                        <h3>Delay classes</h3>
+                        <p>You can add delays directly on the element's class attribute, just like this:</p>
+                        <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+                        <p>The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:</p>
+                        <pre>
+/* All delay classes will take 2x longer to start */
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
+                        </pre>
+                        <h3>Slow, slower, fast, and Faster classes</h3>
+                        <p>You can control the speed of the animation by adding these classes, as below:</p>
+                        <pre>
+                            &lt;div class="animate__animated animate__bounce animate__faster">Example&lt;/div>
+                        </pre>
+                    </section>
+                    <!-- Usage with JavaScript -->
+                    <section id="usage-js">
+                        <h2>Usage with JavaScript</h2>
+                        <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+                        <h3>Delay classes</h3>
+                        <p>You can add delays directly on the element's class attribute, just like this:</p>
+                        <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+                        <p>The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:</p>
+                        <pre>
+/* All delay classes will take 2x longer to start */
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
+                        </pre>
+                        <h3>Slow, slower, fast, and Faster classes</h3>
+                        <p>You can control the speed of the animation by adding these classes, as below:</p>
+                        <pre>
+                            &lt;div class="animate__animated animate__bounce animate__faster">Example&lt;/div>
+                        </pre>
+                    </section>
+                    <!-- Migration from v3.x and under -->
+                    <section id="migration">
+                        <h2>Migration from v3.x and under</h2>
+                        <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+                        <h3>Delay classes</h3>
+                        <p>You can add delays directly on the element's class attribute, just like this:</p>
+                        <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+                        <p>The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:</p>
+                        <pre>
+/* All delay classes will take 2x longer to start */
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
+                        </pre>
+                        <h3>Slow, slower, fast, and Faster classes</h3>
+                        <p>You can control the speed of the animation by adding these classes, as below:</p>
+                        <pre>
+                            &lt;div class="animate__animated animate__bounce animate__faster">Example&lt;/div>
+                        </pre>
+                    </section>
+                    <!-- Custom builds -->
+                    <section id="custom-builds">
+                        <h2>Custom builds</h2>
+                        <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+                        <h3>Delay classes</h3>
+                        <p>You can add delays directly on the element's class attribute, just like this:</p>
+                        <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+                        <p>The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:</p>
+                        <pre>
+/* All delay classes will take 2x longer to start */
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
+                        </pre>
+                        <h3>Slow, slower, fast, and Faster classes</h3>
+                        <p>You can control the speed of the animation by adding these classes, as below:</p>
+                        <pre>
+                            &lt;div class="animate__animated animate__bounce animate__faster">Example&lt;/div>
+                        </pre>
+                    </section>
+                    <!-- Accessibility -->
+                    <section id="accessibility">
+                        <h2>Accessibility</h2>
+                        <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+                        <h3>Delay classes</h3>
+                        <p>You can add delays directly on the element's class attribute, just like this:</p>
+                        <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+                        <p>The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:</p>
+                        <pre>
+/* All delay classes will take 2x longer to start */
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
+                        </pre>
+                        <h3>Slow, slower, fast, and Faster classes</h3>
+                        <p>You can control the speed of the animation by adding these classes, as below:</p>
+                        <pre>
+                            &lt;div class="animate__animated animate__bounce animate__faster">Example&lt;/div>
+                        </pre>
+                    </section>
+                    <!-- Core team -->
+                    <section id="team">
+                        <h2>Core team</h2>
+                        <p>Daniel Eden - Animate.css Creator <br>	
+                            Elton Mesquita - Maintainer	<br>	
+                            Waren Gonzaga - Core Contributor
+                        </p>
+                    </section>
+                    <!-- License and Contributing -->
+                    <section id="license">
+                        <h2>License and Contributing</h2>
+                        <p>Animate.css is licensed under the Hippocratic License.</p>
+                        <h3>Contributing</h3>
+                        <p>Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorized [fades, bounces, etc.]) and let us see a demo of submitted animations in a pen. That last one is important.</p>
+                        <h3>Code of Conduct</h3>
+                        <p>This project and everyone participating in it is governed by the Contributor Covenant Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to animate@eltonmesquita.com.</p>
+                    </section>
+
+
+
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <div class="version">v4.1.0</div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#usage">Installation and usage</a>
+                            </li>
+                            <li>
+                                <a href="#utility">Utility classes</a>
+                            </li>
+                            <li>
+                                <a href="#practise">Best practises</a>
+                            </li>
+                            <li>
+                                <a href="#usage-js">Usage with JavaScript</a>
+                            </li>
+                            <li>
+                                <a href="#migration">Migration from v3.x and under</a>
+                            </li>
+                            <li>
+                                <a href="#custom-builds">Custom builds</a>
+                            </li>
+                            <li>
+                                <a href="#accessibility">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#team">Core team</a>
+                            </li>
+                            <li>
+                                <a href="#license">License and Contributing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <p>Animate.css is a MIT licensed library. You can use it freely, respecting the terms included in the license file.</p>
+        </footer>
+    </main>
+
+    <script>
+        let introSidebar = document.getElementById('intro-sidebar');
+
+        document.getElementById('intro-sidebar-open-btn').addEventListener('click', (e) => {
+            introSidebar.classList.add('active');
+            e.preventDefault();
+        });
+
+        document.getElementById('intro-sidebar-close-btn').addEventListener('click', (e) => {
+            introSidebar.classList.remove('active');
+            e.preventDefault();
+        });
+
+        let sidebar = document.getElementById('sidebar'),
+            menuBtn = document.getElementById('hamburger-menu-btn');
+
+        menuBtn.addEventListener('click', (e) => {
+            menuBtn.classList.toggle('active');
+            sidebar.classList.toggle('active');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
