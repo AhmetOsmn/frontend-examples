@@ -11,3 +11,7 @@
 ### 3. Dashboard Örneği
 ---
 ![Getting Started](./images/frontend-examples-3.png)
+---
+### 4. Animate.style Arayüzü
+---
+![Getting Started](./images/frontend-examples-4.1.png)
