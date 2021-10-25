@@ -1,4 +1,4 @@
-## &nbsp; &nbsp; &nbsp; &nbsp; Herkese merhaba. Frontend kısmında gelişebilmek için yapacağım çalışmaları buraya yüklüyor olacağım. Çalışmaların ekran görüntüleri alt kısımdadır. 
+## Herkese merhaba. <br><br>Frontend kısmında gelişebilmek için yapacağım çalışmaları buraya yüklüyorum. <br><br> Çalışmaların ekran görüntüleri alt kısımdadır. 
 ---
 ### 1. Sohbet Arayüzü
 ---
