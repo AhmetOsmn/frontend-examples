@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --color: #006699;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+body {
+    background-color: #F5F6F8;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #fff;
+    .container {
+        height: 56px;
+        display: flex;
+        align-items: center;
+
+        .search {
+            margin-left: 18px;
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 32px;
+                width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #aaa;
+            }
+
+            input {
+                height: 32px;
+                width: 100%;
+                border-radius: 4px;
+                font-size: 14px;
+                background-color: rgba($color: #DEDEDE, $alpha: .32);
+                padding: 0 15px 0 44px;
+                &::placeholder {
+                    color: #AAAAAA;
+                }
+            }
+        }
+
+        .menu {
+            margin:0 auto;
+
+            ul {
+                display: flex;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 13px;
+                        color: #aaa;
+
+                        i {
+                            font-size: 20px;
+                        }
+
+                        span {
+                            display: none;
+                        }
+
+                        &:hover {
+                            color: var(--color);
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            color: var(--color);
+                            i {
+                                margin-right: 5px;
+                            }
+
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .user-menu {
+            > a {
+                display: flex;
+                align-items: center;
+
+                .detail {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    margin-right: 6px;
+
+                    .name {
+                        font-size: 12px;
+                        color: #17272F;
+                    }
+
+                    .status {
+                        font-size: 12px;
+
+                        &.online {
+                            color: #31B057;
+                        }
+
+                        &.offline {
+                            color: #b03131;
+                        }
+                    }
+                }
+
+                img {
+                    width: 24px;
+                    min-width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                i {
+                    color: #A7B4CC;
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+// 21:51 de kaldım

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --color: #006699;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #F5F6F8;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header .container {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container .search {
+  margin-left: 18px;
+  position: relative;
+}
+
+.header .container .search i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #aaa;
+}
+
+.header .container .search input {
+  height: 32px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgba(222, 222, 222, 0.32);
+  padding: 0 15px 0 44px;
+}
+
+.header .container .search input::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+
+.header .container .search input:-ms-input-placeholder {
+  color: #AAAAAA;
+}
+
+.header .container .search input::-ms-input-placeholder {
+  color: #AAAAAA;
+}
+
+.header .container .search input::placeholder {
+  color: #AAAAAA;
+}
+
+.header .container .menu {
+  margin: 0 auto;
+}
+
+.header .container .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .container .menu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 13px;
+  color: #aaa;
+}
+
+.header .container .menu ul li a i {
+  font-size: 20px;
+}
+
+.header .container .menu ul li a span {
+  display: none;
+}
+
+.header .container .menu ul li a:hover {
+  color: var(--color);
+}
+
+.header .container .menu ul li.active a {
+  color: var(--color);
+}
+
+.header .container .menu ul li.active a i {
+  margin-right: 5px;
+}
+
+.header .container .menu ul li.active a span {
+  display: block;
+}
+
+.header .container .user-menu > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container .user-menu > a .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  margin-right: 6px;
+}
+
+.header .container .user-menu > a .detail .name {
+  font-size: 12px;
+  color: #17272F;
+}
+
+.header .container .user-menu > a .detail .status {
+  font-size: 12px;
+}
+
+.header .container .user-menu > a .detail .status.online {
+  color: #31B057;
+}
+
+.header .container .user-menu > a .detail .status.offline {
+  color: #b03131;
+}
+
+.header .container .user-menu > a img {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .container .user-menu > a i {
+  color: #A7B4CC;
+  font-size: 12px;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=style.css.map */
