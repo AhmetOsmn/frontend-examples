@@ -29,6 +29,7 @@ body {
 
 .header {
   background-color: #fff;
+  margin-bottom: 16px;
 }
 
 .header .container {
@@ -188,5 +189,205 @@ body {
   color: #A7B4CC;
   font-size: 12px;
   margin-left: 5px;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .sidebar {
+  min-width: 270px;
+  width: 270px;
+}
+
+main .container .sidebar .widget {
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+main .container .sidebar .widget-stats {
+  padding: 8px;
+}
+
+main .container .sidebar .widget-stats .stat-user {
+  text-align: center;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #EDF0F5;
+}
+
+main .container .sidebar .widget-stats .stat-user .cover {
+  height: 43px;
+  background: url(../images/cover-bg.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+main .container .sidebar .widget-stats .stat-user .avatar {
+  text-align: center;
+  margin-top: -26px;
+  margin-bottom: 10px;
+}
+
+main .container .sidebar .widget-stats .stat-user .avatar img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #fff;
+}
+
+main .container .sidebar .widget-stats .stat-user .name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #17272F;
+}
+
+main .container .sidebar .widget-stats .stat-user .job-title {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+main .container .sidebar .widget-stats ul {
+  padding: 0 7px 11px;
+}
+
+main .container .sidebar .widget-stats ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+main .container .sidebar .widget-stats ul li .key {
+  color: #17272F;
+}
+
+main .container .sidebar .widget-stats ul li .value {
+  color: var(--color);
+  font-weight: 500;
+}
+
+main .container .sidebar .widget-stats ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+main .container .sidebar .widget-newest h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #17272F;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #EDF0F5;
+  margin-bottom: 8PX;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container .sidebar .widget-newest h6 .dropdown a {
+  font-size: 14px;
+  color: #31B057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+}
+
+main .container .sidebar .widget-newest h6 .dropdown a i {
+  font-size: 10px;
+  color: #aaa;
+  margin-left: 5px;
+}
+
+main .container .sidebar .widget-newest ul {
+  padding-bottom: 30px;
+}
+
+main .container .sidebar .widget-newest ul:last-child {
+  padding-bottom: 0;
+}
+
+main .container .sidebar .widget-newest ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  color: var(--color);
+  padding: 4px 0;
+}
+
+main .container .sidebar .widget-newest ul li a:hover {
+  color: #222;
+}
+
+main .container .sidebar .widget-newest ul li a i {
+  width: 21px;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+main .container .sidebar .widget-btn {
+  height: 50px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #17272F;
+  font-weight: 500;
+}
+
+main .container .sidebar .widget-btn i {
+  color: var(--color);
+}
+
+main .container .sidebar .widget-btn.more {
+  height: 56px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color);
+  -webkit-transition: 300ms background-color , 300ms color;
+  transition: 300ms background-color , 300ms color;
+}
+
+main .container .sidebar .widget-btn.more:hover {
+  background: var(--color);
+  color: #fff;
+}
+
+main .container .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 30px;
 }
 /*# sourceMappingURL=style.css.map */
