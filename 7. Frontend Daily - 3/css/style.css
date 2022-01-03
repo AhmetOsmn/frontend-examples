@@ -28,12 +28,13 @@
 * {
   padding: 0;
   margin: 0;
-  list-style: 0;
+  list-style: none;
   border: none;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Louis George Cafe';
+  -webkit-overflow-scrolling: touch;
 }
 
 *:focus {
@@ -57,9 +58,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .app-header {
@@ -77,7 +75,7 @@ body {
 
 .app-header .balance .text {
   font-size: 14px;
-  color: rgba #fff, 0.5;
+  color: #fff;
 }
 
 .app-header .balance .money {
@@ -92,5 +90,115 @@ body {
   border: 2px solid #157AFF;
   -webkit-box-shadow: 0 6px 12px 0 rgba(21, 122, 255, 0.5);
           box-shadow: 0 6px 12px 0 rgba(21, 122, 255, 0.5);
+}
+
+.actions {
+  overflow-x: auto;
+  margin-bottom: 30px;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.actions ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.actions ul li {
+  padding: 0 15px;
+  scroll-snap-align: start;
+}
+
+.actions ul li:first-child {
+  padding-left: 24px;
+}
+
+.actions ul li:last-child {
+  padding-right: 24px;
+}
+
+.actions ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.actions ul li a .icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 24px;
+  background-color: rgba(83, 95, 109, 0.19);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.actions ul li a .icon i.icon-card {
+  font-size: 20px;
+}
+
+.actions ul li a .text {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 13px;
+}
+
+.transactions {
+  padding: 0 24px;
+}
+
+h6 {
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: normal;
+}
+
+h6 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h6 .buttons a {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 15px;
+  background-color: rgba(83, 95, 109, 0.19);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-left: 18px;
 }
 /*# sourceMappingURL=style.css.map */
