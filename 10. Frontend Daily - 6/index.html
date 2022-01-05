@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="main.js">
+    <title>Daily 6</title>
+</head>
+<body>
+    
+    <label for="popup-1">
+        Share
+    </label>
+
+    <input type="checkbox" id="popup-1" class="popup-toggle">
+    <div class="popup">
+        <div class="popup-inner share-popup">
+            <label for="popup-1" class="popup-close">
+                <img src="images/close-icon-dark.svg" alt="">
+            </label>
+            <h4>Share this design</h4>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/pinterest.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/facebook.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/linkedin.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/tumblr.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/instagram.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <h6>or copy link</h6>
+            <div class="input">
+                <input type="text" readonly id="input-url" value="https://www.uidesigndaily.com/posts/5d6ab9ea91deae0012006d44">
+                <button type="button" onclick="copy('input-url')">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
