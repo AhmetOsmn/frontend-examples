@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.cookie-banner {
+  border-radius: 5px;
+  background: var(--color2);
+  -webkit-box-shadow: 0 15px 45px -12px rgba(0, 29, 147, 0.15);
+          box-shadow: 0 15px 45px -12px rgba(0, 29, 147, 0.15);
+  --color1: #10182F;
+  --color2: #fff;
+  --color3: #306BF3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+.cookie-banner.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cookie-banner.active.position-bc, .cookie-banner.active.positicon-tc {
+  -webkit-transform: translateX(-50%) scale(1) !important;
+          transform: translateX(-50%) scale(1) !important;
+}
+
+.cookie-banner p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--color1);
+}
+
+.cookie-banner p a {
+  display: block;
+  text-decoration: underline;
+  color: var(--color1);
+}
+
+.cookie-banner.dark {
+  --color1: #fff;
+  --color2: #10182F;
+  --color3: #fff
+    ;
+}
+
+.cookie-banner.style1 {
+  width: 410px;
+  height: 196px;
+  padding: 35px 35px 25px;
+}
+
+.cookie-banner.style1 .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.cookie-banner.style1 .actions a {
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 132px;
+  color: var(--color1);
+}
+
+.cookie-banner.style1 .actions a.btn {
+  background: var(--color1);
+  color: var(--color2);
+  border-radius: 5px;
+}
+
+.cookie-banner.style2 {
+  width: 410px;
+  height: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 39px 40px 35px;
+}
+
+.cookie-banner.style2 .icon {
+  text-align: center;
+  fill: var(--color3);
+}
+
+.cookie-banner.style2 p {
+  text-align: center;
+}
+
+.cookie-banner.style2 .actions {
+  text-align: center;
+}
+
+.cookie-banner.style2 .actions a {
+  display: inline-block;
+  width: 110px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  background: var(--color1);
+  color: var(--color2);
+}
+
+.cookie-banner.style2.vertical {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 731px;
+  height: 145px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  padding: 0 35px;
+}
+
+.cookie-banner.style2.vertical .icon {
+  margin-left: 5px;
+  margin-right: 45px;
+  min-width: 95px;
+  text-align: center;
+}
+
+.cookie-banner.style2.vertical p {
+  max-width: 330px;
+  text-align: left;
+}
+
+.cookie-banner.style2.vertical .actions {
+  margin-left: auto;
+}
+
+.cookie-banner.position-tr {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.cookie-banner.position-tl {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.cookie-banner.position-br {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.cookie-banner.position-bl {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.cookie-banner.position-tc {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.8);
+          transform: translateX(-50%) scale(0.8);
+}
+
+.cookie-banner.position-bc {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.8);
+          transform: translateX(-50%) scale(0.8);
+}
+/*# sourceMappingURL=style.css.map */
