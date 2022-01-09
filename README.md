@@ -35,3 +35,7 @@
 ### 11. Frontend Daily - 7
 ---
 ![Frontend Daily-7](./images/frontend-examples-11.png)
+
+### 12. Frontend Daily - 8
+---
+![Frontend Daily-8](./images/frontend-examples-12.png)
