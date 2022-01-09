@@ -29,6 +29,19 @@ body {
           justify-content: space-between;
 }
 
+.col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .component--job-item {
   background: #fff;
   -webkit-box-shadow: 0 21px 87px -35px rgba(80, 98, 211, 0.5);
@@ -183,16 +196,20 @@ body {
   width: 300px;
   background: #fff;
   border-radius: 20px;
-}
-
-.component--job-filter form .search {
-  height: 106px;
   padding: 30px;
 }
 
+.component--job-filter form .search {
+  height: 76px;
+  margin: 0 -30px;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  border: 1px solid #E7EAFB;
+}
+
 .component--job-filter form .search input {
-  height: 46px;
-  line-height: 106px;
+  height: 76px;
+  line-height: 76px;
   background: transparent url(../images/search.svg) no-repeat 8px;
   font-size: 16px;
   padding-left: 45px;
@@ -213,5 +230,149 @@ body {
 
 .component--job-filter form .search input::placeholder {
   color: rgba(17, 17, 39, 0.7);
+}
+
+.component--job-filter form h6 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #111127;
+  margin-bottom: 15px;
+}
+
+.component--job-filter form .checkbox-list {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.component--job-filter form .checkbox-list li {
+  margin-bottom: 20px;
+}
+
+.component--job-filter form .checkbox-list li:last-child {
+  margin-bottom: 0;
+}
+
+.component--job-filter form .checkbox-list li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.component--job-filter form .checkbox-list li label .checkbox {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #E7EAFB;
+  border-radius: 5px;
+  background: #fff url(../images/check.svg) no-repeat center;
+  min-width: 27px;
+  -webkit-transition: 300ms background-color, 300ms border-color;
+  transition: 300ms background-color, 300ms border-color;
+  margin-right: 15px;
+}
+
+.component--job-filter form .checkbox-list li label .text {
+  font-size: 16px;
+  color: #111127;
+}
+
+.component--job-filter form .checkbox-list li label input {
+  display: none;
+}
+
+.component--job-filter form .checkbox-list li label input:checked + .checkbox {
+  background-color: #8A9CFF;
+  border-color: #8A9CFF;
+}
+
+.component--job-filter form .filter-form li {
+  margin-bottom: 20px;
+}
+
+.component--job-filter form .filter-form li:last-child {
+  margin-bottom: 0;
+}
+
+.component--job-filter form .filter-form li label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #111127;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.component--job-filter form .filter-form li select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 46px;
+  border: 2px solid #E7EAFB;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 0 40px 0 20px;
+  cursor: pointer;
+  background: #fff url(../images/ok.svg) no-repeat calc(100% - 10px) center;
+  -webkit-transition: 300ms border-color;
+  transition: 300ms border-color;
+}
+
+.component--job-filter form .filter-form li select:hover {
+  border-color: #dadff9;
+}
+
+.component--job-filter form .filter-form li select:focus {
+  border-color: #8A9CFF;
+}
+
+.component--job-filter form .filter-form li button {
+  width: 100%;
+  height: 58px;
+  background: #8A9CFF;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 11px 30px -15px #6778E1;
+          box-shadow: 0 11px 30px -15px #6778E1;
+  -webkit-transition: 300ms background-color;
+  transition: 300ms background-color;
+}
+
+.component--job-filter form .filter-form li button:hover {
+  background: #5771ff;
+}
+
+.component--job-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 71px;
+  background-color: #fff;
+  padding: 0 35px 0 45px;
+  font-size: 18px;
+  color: #111127;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 11px 30px -15px rgba(103, 120, 225, 0.54);
+          box-shadow: 0 11px 30px -15px rgba(103, 120, 225, 0.54);
+  -webkit-transition: 300ms -webkit-transform;
+  transition: 300ms -webkit-transform;
+  transition: 300ms transform;
+  transition: 300ms transform, 300ms -webkit-transform;
+}
+
+.component--job-button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  color: #5062D3;
+}
+
+.component--job-button img {
+  margin-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */

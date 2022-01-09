@@ -23,6 +23,13 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.col-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .component {
 
     &--job-item {
@@ -142,13 +149,20 @@ body {
         width: 300px;
         background: #fff;
         border-radius: 20px;
+        padding: 30px;
+        
         form {
             .search {
-                height: 106px;
-                padding: 30px;
+                height: 76px;
+                margin: 0 -30px;
+                padding: 0 30px;
+                margin-bottom: 30px;
+                border: 1px solid #E7EAFB;
+                
+
                 input {
-                    height:46px;
-                    line-height: 106px;
+                    height:76px;
+                    line-height: 76px;
                     background: transparent url(../images/search.svg) no-repeat 8px;
                     font-size: 16px;
                     padding-left: 45px;
@@ -159,9 +173,132 @@ body {
 
                 }
             }
+
+            h6 {
+                font-size: 12px;
+                font-weight: bold;
+                color: #111127;
+                margin-bottom: 15px;
+            }
+
+            .checkbox-list {
+                padding-top: 10px;
+                padding-bottom: 40px;
+
+                li {
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    label {
+                        display:flex;
+                        cursor: pointer;
+                        .checkbox {
+                            width: 27px;
+                            height: 27px;
+                            border: 1px solid #E7EAFB;
+                            border-radius: 5px;
+                            background: #fff url(../images/check.svg) no-repeat center;
+                            min-width: 27px;
+                            transition: 300ms background-color, 300ms border-color;
+                            margin-right: 15px;
+                        }
+                        .text {
+                            font-size: 16px;
+                            color: #111127;
+                        }
+                        input {
+                            display: none;
+
+                            &:checked + .checkbox {
+                                background-color: #8A9CFF;
+                                border-color: #8A9CFF;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .filter-form {
+                li {
+                    margin-bottom: 20px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    label {
+                        display: block;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #111127;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                    }
+
+                    select {
+                        appearance: none;
+                        height: 46px;
+                        border: 2px solid #E7EAFB;
+                        border-radius: 8px;
+                        text-overflow: ellipsis;
+                        width: 100%;
+                        padding: 0 40px 0 20px;
+                        cursor: pointer;
+                        background: #fff url(../images/ok.svg) no-repeat calc(100% - 10px) center;
+                        transition:  300ms border-color;
+                        &:hover {
+                            border-color:  darken($color: #E7EAFB, $amount: 3%);
+                        }
+
+                        &:focus{
+                            border-color: #8A9CFF;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 58px;
+                        background: #8A9CFF;
+                        border-radius: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: bold;
+                        box-shadow: 0 11px 30px -15px #6778E1;
+                        transition: 300ms background-color;
+
+                        &:hover {
+                            background: darken($color: #8A9CFF, $amount: 10%);
+                        }
+                    }
+                }
+            }
         }
 
     }
+
+    &--job-button {
+        display: inline-flex; ;
+        align-items: center;
+        height: 71px;
+        background-color: #fff;
+        padding: 0 35px 0 45px;
+        font-size: 18px;
+        color: #111127;
+        border-radius: 10px;
+        box-shadow: 0 11px 30px -15px rgba($color: #6778E1, $alpha: .54);
+        transition: 300ms transform;
+
+        &:hover {   
+            transform: scale(1.03);
+            color: #5062D3;
+        }
+
+        img {
+            margin-left: 25px;
+        }
+    }   
 }
-//19:35 te kaldım
 
