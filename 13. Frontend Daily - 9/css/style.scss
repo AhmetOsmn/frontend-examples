@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Mulish', sans-serif;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+body {
+    background: #E7EAFB;
+    padding: 50px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.component {
+
+    &--job-item {
+        background: #fff;
+        box-shadow: 0 21px 87px -35px rgba(#5062D3, .5);
+        border-radius: 20px;
+        max-width: 610px;
+        display: flex;
+        padding: 50px 50px 40px;
+        flex-direction: column;
+
+
+        .title {
+            margin-bottom: 5px;
+            font-size: 25px;
+            color: #111127;
+            font-weight: bold;
+
+            a {
+            color: #111127;
+            }
+        }
+        .position {
+            color: rgba($color: #111127, $alpha: .7);
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 18px;
+            color: #111127;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            
+            a {
+                padding: 7px 20px;
+                background: #E7EAFB;
+                border-radius: 30px;
+                font-size: 14px;
+                color: #111127;
+                margin: 0 10px 10px 0;
+
+                &:hover {
+                    background: darken($color: #E7EAFB, $amount: 3%);
+                }
+            }
+        }
+    }
+
+    &--job-items {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        li {
+            margin-bottom: 15px;
+            a {
+                display: flex;
+                background: #fff;
+                border-radius: 10px;
+                padding: 20px 45px 20px 20px;
+                align-items: center;
+                transition: 300ms transform;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
+                .avatar {
+                    min-width: 64px;
+                    margin-right: 15px;
+                    height: 64px;
+                    border-radius: 50%;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: var(--color);
+                    display: grid;
+                    place-items: center;
+                    border: 2px solid #E7EAFB;
+                }
+
+                .detail {
+                    display: flex;
+                    flex-direction: column;
+                    .title {
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #111127;
+                        margin-bottom: 9px;
+                    }
+                    .position {
+                        font-size: 16px;
+                        color: rgba($color: #111127, $alpha: .7);
+                    }
+
+                }
+
+                .location {
+                    margin-left: auto;
+                    opacity: .6;
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    color: #111127;
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &--job-filter {
+        width: 300px;
+        background: #fff;
+        border-radius: 20px;
+        form {
+            .search {
+                height: 106px;
+                padding: 30px;
+                input {
+                    height:46px;
+                    line-height: 106px;
+                    background: transparent url(../images/search.svg) no-repeat 8px;
+                    font-size: 16px;
+                    padding-left: 45px;
+                    color: #111127;
+                    &::placeholder{
+                        color: rgba($color: #111127, $alpha: .7);
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+//19:35 te kaldım
+

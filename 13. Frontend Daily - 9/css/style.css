@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #E7EAFB;
+  padding: 50px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.component--job-item {
+  background: #fff;
+  -webkit-box-shadow: 0 21px 87px -35px rgba(80, 98, 211, 0.5);
+          box-shadow: 0 21px 87px -35px rgba(80, 98, 211, 0.5);
+  border-radius: 20px;
+  max-width: 610px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 50px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.component--job-item .title {
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: #111127;
+  font-weight: bold;
+}
+
+.component--job-item .title a {
+  color: #111127;
+}
+
+.component--job-item .position {
+  color: rgba(17, 17, 39, 0.7);
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.component--job-item p {
+  font-size: 18px;
+  color: #111127;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+
+.component--job-item .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.component--job-item .tags a {
+  padding: 7px 20px;
+  background: #E7EAFB;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #111127;
+  margin: 0 10px 10px 0;
+}
+
+.component--job-item .tags a:hover {
+  background: #dadff9;
+}
+
+.component--job-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 700px;
+}
+
+.component--job-items li {
+  margin-bottom: 15px;
+}
+
+.component--job-items li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 45px 20px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms -webkit-transform;
+  transition: 300ms -webkit-transform;
+  transition: 300ms transform;
+  transition: 300ms transform, 300ms -webkit-transform;
+}
+
+.component--job-items li a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.component--job-items li a .avatar {
+  min-width: 64px;
+  margin-right: 15px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 2px solid #E7EAFB;
+}
+
+.component--job-items li a .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.component--job-items li a .detail .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111127;
+  margin-bottom: 9px;
+}
+
+.component--job-items li a .detail .position {
+  font-size: 16px;
+  color: rgba(17, 17, 39, 0.7);
+}
+
+.component--job-items li a .location {
+  margin-left: auto;
+  opacity: .6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #111127;
+}
+
+.component--job-items li a .location img {
+  margin-right: 5px;
+}
+
+.component--job-filter {
+  width: 300px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.component--job-filter form .search {
+  height: 106px;
+  padding: 30px;
+}
+
+.component--job-filter form .search input {
+  height: 46px;
+  line-height: 106px;
+  background: transparent url(../images/search.svg) no-repeat 8px;
+  font-size: 16px;
+  padding-left: 45px;
+  color: #111127;
+}
+
+.component--job-filter form .search input::-webkit-input-placeholder {
+  color: rgba(17, 17, 39, 0.7);
+}
+
+.component--job-filter form .search input:-ms-input-placeholder {
+  color: rgba(17, 17, 39, 0.7);
+}
+
+.component--job-filter form .search input::-ms-input-placeholder {
+  color: rgba(17, 17, 39, 0.7);
+}
+
+.component--job-filter form .search input::placeholder {
+  color: rgba(17, 17, 39, 0.7);
+}
+/*# sourceMappingURL=style.css.map */
