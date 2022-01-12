@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #F7F8FC;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.component--trial-box {
+  background: #fff;
+  -webkit-box-shadow: 0 28px 30px -12px #E9ECF9;
+          box-shadow: 0 28px 30px -12px #E9ECF9;
+  padding: 55px 45px;
+  border-radius: 5px;
+  width: 566px;
+}
+
+.component--trial-box h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #10182F;
+  margin-bottom: 25PX;
+}
+
+.component--trial-box .credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.component--trial-box .credit .circle-bar {
+  margin-right: 20px;
+  width: 72px;
+  height: 72px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.component--trial-box .credit .circle-bar svg circle {
+  fill: none;
+  stroke-width: 5;
+  stroke: #DAE1F5;
+  stroke-dasharray: var(--circum);
+  stroke-dashoffset: var(--circum);
+  stroke-linecap: round;
+}
+
+.component--trial-box .credit .circle-bar svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+}
+
+.component--trial-box .credit .circle-bar svg circle:nth-child(2) {
+  stroke: #345ACE;
+  -webkit-animation: 2s animateOffSet;
+          animation: 2s animateOffSet;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.component--trial-box .credit .amount {
+  font-size: 26px;
+  font-weight: bold;
+  color: #10182F;
+}
+
+.component--trial-box .text {
+  font-size: 16px;
+  color: #545D7A;
+}
+
+.component--trial-box p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #10182F;
+  margin-bottom: 40px;
+}
+
+.component--trial-box .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.component--trial-box .action a {
+  margin-right: 15px;
+  height: 43px;
+  border: 2px solid #DAE1F5;
+  border-radius: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 35px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #10182F;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.component--trial-box .action a:hover {
+  border-color: #345ACE;
+  color: #345ACE;
+}
+
+.component--trial-box .action a.active {
+  background: #10182F;
+  color: #fff;
+  border-color: #10182F;
+}
+
+.component--trial-box .action a.active:hover {
+  background: #345ACE;
+  border-color: #345ACE;
+}
+
+@-webkit-keyframes animateOffSet {
+  to {
+    stroke-dashoffset: var(--offset);
+  }
+}
+
+@keyframes animateOffSet {
+  to {
+    stroke-dashoffset: var(--offset);
+  }
+}
+/*# sourceMappingURL=style.css.map */
