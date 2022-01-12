@@ -51,3 +51,7 @@
 ### 15. Frontend Daily - 10
 ---
 ![Frontend Daily-10](./images/frontend-examples-15.png)
+
+### 16. Frontend Daily - 11
+---
+![Frontend Daily-11](./images/frontend-examples-16.png)

@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #F7F8FC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  border-top: 5px solid #10182F;
+  padding: 75px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 76px -12px rgba(0, 29, 147, 0.1);
+          box-shadow: 0 10px 76px -12px rgba(0, 29, 147, 0.1);
+}
+
+.footer .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .footer-top .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  margin-right: 40px;
+  font-weight: bold;
+  color: #10182F;
+}
+
+.footer .footer-top .footer-menu {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-top .footer-menu nav {
+  min-width: 150px;
+  margin-right: 40px;
+}
+
+.footer .footer-top .footer-menu nav h5 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #222C46;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer .footer-top .footer-menu nav ul li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #545D7A;
+  padding: 10px 0;
+  position: relative;
+}
+
+.footer .footer-top .footer-menu nav ul li a::before {
+  content: '';
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #545D7A;
+  width: 0;
+  -webkit-transition: 300ms width;
+  transition: 300ms width;
+}
+
+.footer .footer-top .footer-menu nav ul li a:hover {
+  color: #222C46;
+}
+
+.footer .footer-top .footer-menu nav ul li a:hover::before {
+  width: 100%;
+}
+
+.footer .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 85px;
+}
+
+.footer .footer-bottom p {
+  font-size: 14px;
+  color: #545D7A;
+}
+
+.footer .footer-bottom .footer-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-bottom .footer-menu ul li {
+  margin: 0 25px;
+}
+
+.footer .footer-bottom .footer-menu ul li a {
+  display: block;
+  font-size: 14px;
+  color: #545D7A;
+  position: relative;
+}
+
+.footer .footer-bottom .footer-menu ul li a::before {
+  content: '';
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #545D7A;
+  width: 0;
+  -webkit-transition: 300ms width;
+  transition: 300ms width;
+}
+
+.footer .footer-bottom .footer-menu ul li a:hover {
+  color: #222C46;
+}
+
+.footer .footer-bottom .footer-menu ul li a:hover::before {
+  width: 100%;
+}
+
+.footer .footer-bottom .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-bottom .footer-social li a {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: 300ms background-color;
+  transition: 300ms background-color;
+}
+
+.footer .footer-bottom .footer-social li a:hover {
+  background-color: rgba(16, 24, 47, 0.1);
+}
+/*# sourceMappingURL=style.css.map */
