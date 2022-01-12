@@ -47,3 +47,7 @@
 ### 14. Frontend Daily - 9.1
 ---
 ![Frontend Daily-9.1](./images/frontend-examples-14.png)
+
+### 15. Frontend Daily - 10
+---
+![Frontend Daily-10](./images/frontend-examples-15.png)
