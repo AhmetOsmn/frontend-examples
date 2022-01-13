@@ -59,3 +59,7 @@
 ### [17. Frontend Daily - 12](https://github.com/AhmetOsmn/frontend-examples/tree/main/17.%20Frontend%20Daily%20-%2012)
 ---
 ![Frontend Daily-12](./images/frontend-examples-17.png)
+
+### [18. Frontend Daily - 13]()
+---
+![Frontend Daily-13](./images/frontend-examples-18.png)
