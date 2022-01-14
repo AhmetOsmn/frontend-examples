@@ -64,6 +64,6 @@
 ---
 ![Frontend Daily-13](./images/frontend-examples-18.png)
 
-### [19. Frontend Daily - 14](https://github.com/AhmetOsmn/frontend-examples/tree/main/18.%20Frontend%20Daily%20-%2013)
+### [19. Frontend Daily - 14](https://github.com/AhmetOsmn/frontend-examples/tree/main/19.%20Frontend%20Daily%20-%2014)
 ---
 ![Frontend Daily-13](./images/frontend-examples-19.png)
