@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #161E29;
+  padding: 50px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.component--followers {
+  background: #1b2431;
+  border-radius: 10px;
+  padding: 30px;
+  width: 412px;
+  -webkit-box-shadow: 0 10px 20px -20px #081323;
+          box-shadow: 0 10px 20px -20px #081323;
+  margin-bottom: 50px;
+}
+
+.component--followers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+}
+
+.component--followers ul li {
+  display: 1 1 auto;
+  margin: 0 10px;
+}
+
+.component--followers ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #161E29;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #C9CEDF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component--followers ul li a img {
+  margin-right: 10px;
+}
+
+.component--user-info {
+  background: #1b2431;
+  border-radius: 10px;
+  padding: 39px;
+  width: 344px;
+  -webkit-box-shadow: 0 10px 20px -20px #081323;
+          box-shadow: 0 10px 20px -20px #081323;
+  margin-bottom: 50px;
+}
+
+.component--user-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #C9CEDF;
+  margin-bottom: 30px;
+}
+
+.component--user-info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.component--user-info ul li a {
+  color: #587DFB;
+}
+
+.component--user-info ul li .icon {
+  text-align: center;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.component--team {
+  background: #1b2431;
+  border-radius: 10px;
+  padding: 40px 40px 50px;
+  width: 503px;
+  -webkit-box-shadow: 0 10px 20px -20px #081323;
+          box-shadow: 0 10px 20px -20px #081323;
+  margin-bottom: 50px;
+}
+
+.component--team h5 {
+  font-size: 22px;
+  color: #C9CEDF;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.component--team ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.component--team ul li:last-child {
+  margin-bottom: 0;
+}
+
+.component--team ul li .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #C9CEDF;
+}
+
+.component--team ul li .team img {
+  margin-right: 14px;
+}
+
+.component--team ul li .team-members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.component--team ul li .team-members a {
+  margin-left: -10px;
+  border: 2px solid #1b2431;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.component--skills {
+  width: 434px;
+}
+
+.component--skills h5 {
+  font-size: 22px;
+  color: #C9CEDF;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.component--skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.component--skills ul li {
+  margin: 5px;
+}
+
+.component--skills ul li a {
+  display: block;
+  padding: 15px 25px;
+  background: #1B2431;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #C9CEDF;
+  -webkit-transition: 300ms background-color;
+  transition: 300ms background-color;
+  -webkit-box-shadow: 0 10px 20px -20px #081323;
+          box-shadow: 0 10px 20px -20px #081323;
+}
+
+.component--skills ul li a:hover {
+  background: #243041;
+}
+/*# sourceMappingURL=style.css.map */
