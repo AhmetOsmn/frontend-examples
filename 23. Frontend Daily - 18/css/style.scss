@@ -20,22 +20,30 @@ body {
     background: #f0f1f2;
 }
 
+.divider {
+    height: 50px;
+}
+
 .component {
 
     &--table {
         padding: 40px 35px 55px;
         background: #fff;
         border-radius: 10px;
+        box-shadow: 0 14px 24px -13px rgba(#000454, .17);
 
-        h3 {
+
+        caption {
             font-size: 22px;
             font-weight: bold;
             color: #16132f;
             margin-bottom: 45px;
+            text-align: left;
         }
 
         table {
             width: 100%;
+            border-collapse: collapse;
 
             .text-left {
                 text-align: left;
@@ -81,13 +89,159 @@ body {
                             background: var(--color);
                             margin-right: 5px;
 
-                            // 06:00
-
                         }
+                    }
+                }
+
+                &:hover td {
+                    background: #f8f8f8;
+                }
+
+                &:last-child td{
+                    td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+
+        tfoot {
+            tr {
+                td {
+
+                    padding-top: 27px;
+
+                    a {
+                        height: 73px;
+                        border: 1px solid #DDDDDD;
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 0 25px;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        color: #444ce9;
+                        transition: 300ms all;
+
+                        svg {
+                            margin-left: 15px;
+
+                            path {
+                                stroke: #444ce9;
+                                transition: 300ms all;
+                            }
+                        }
+
+                        &:hover {
+                            background: #444ce9;
+                            color: #fff;
+                            border-color: #444ce9;
+
+                            svg {
+                                path {
+                                    stroke: #fff;
+                                }
+                            }
+                        }
+        
                     }
                 }
             }
         }
     }
+
+    &--notified {
+        padding: 40px 30px;
+        background: #444ce9;
+        width: 313px;
+        box-shadow: 0 20px 43px 0 rgba(#000454, .17); 
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        p {
+            line-height: 25px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+
+    &--user-card {
+        padding: 60px;
+        box-shadow: 0 20px 43px 0 rgba(#000454, .17); 
+        background: #fff;
+        width: 338px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #16132f;
+        font-size: 16px;
+        position: relative;
+
+        time {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            color: #16132f;
+            padding: 4px 10px;
+            border: 1px solid #DDDDDD;
+            border-radius: 16px;
+
+
+            img {
+                height: 20px;
+                margin-right: 7px;
+            }
+        }
+
+        >img {
+            width: 138px;
+            height: 138px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+         }
+
+         .username {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+         }
+
+         .name {
+             margin-bottom: 35px;
+         }
+
+         a {
+             width: 100%;
+             background: #444ce9;
+             height: 53px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border-radius: 5px;
+             color: #fff;
+             transition: 300ms all;
+
+             &:hover {
+                 background: darken($color: #444ce9, $amount: 5%);
+             }
+         }
+    }
 }
+
+
 
