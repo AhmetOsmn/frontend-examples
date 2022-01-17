@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Nunito Sans', sans-serif;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+body {
+    padding: 50px;
+    background: #f0f1f2;
+}
+
+.component {
+
+    &--table {
+        padding: 40px 35px 55px;
+        background: #fff;
+        border-radius: 10px;
+
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #16132f;
+            margin-bottom: 45px;
+        }
+
+        table {
+            width: 100%;
+
+            .text-left {
+                text-align: left;
+            }
+
+            th, td {
+                text-align: center;;
+            }
+
+            thead {
+                tr {
+                    th {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #9c9c9f;
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid #EEEEEE;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 18px 0;
+                    border-bottom: 1px solid #EEEEEE;
+                    font-size: 18px;
+                    color: #16132f;
+
+                    .label {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        color: #16132f;
+                        display: flex;
+                        align-items: center;
+
+                        &::before {
+                            content: '';
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background: var(--color);
+                            margin-right: 5px;
+
+                            // 06:00
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
