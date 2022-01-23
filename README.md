@@ -36,15 +36,15 @@
 ---
 ![Frontend Daily-6](./images/frontend-examples-10.png)
 
-### [11. Frontend Daily - 7](https://github.com/AhmetOsmn/frontend-examples/tree/main/11.%20Frontend%20Daily%20-%207)- [Demo](https://11-frontend-daily-7.netlify.app/)
+### [11. Frontend Daily - 7](https://github.com/AhmetOsmn/frontend-examples/tree/main/11.%20Frontend%20Daily%20-%207) - [Demo](https://11-frontend-daily-7.netlify.app/)
 ---
 ![Frontend Daily-7](./images/frontend-examples-11.png)
 
-### [12. Frontend Daily - 8](https://github.com/AhmetOsmn/frontend-examples/tree/main/12.%20Frontend%20Daily%20-%208)- [Demo](https://12-frontend-daily-8.netlify.app/)
+### [12. Frontend Daily - 8](https://github.com/AhmetOsmn/frontend-examples/tree/main/12.%20Frontend%20Daily%20-%208) - [Demo](https://12-frontend-daily-8.netlify.app/)
 ---
 ![Frontend Daily-8](./images/frontend-examples-12.png)
 
-### [13. Frontend Daily - 9](https://github.com/AhmetOsmn/frontend-examples/tree/main/13.%20Frontend%20Daily%20-%209)- [Demo](https://13-frontend-daily-9.netlify.app/)
+### [13. Frontend Daily - 9](https://github.com/AhmetOsmn/frontend-examples/tree/main/13.%20Frontend%20Daily%20-%209) - [Demo](https://13-frontend-daily-9.netlify.app/)
 ---
 ![Frontend Daily-9](./images/frontend-examples-13.png)
 
