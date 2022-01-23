@@ -1,6 +1,6 @@
 ## Herkese merhaba. <br><br>Frontend kısmında gelişmek için yapacağım çalışmaları buraya yüklüyorum. <br><br> Çalışmaların ekran görüntüleri:
 ---
-### [1. Sohbet Arayüzü](https://github.com/AhmetOsmn/frontend-examples/tree/main/01.%20Sohbet%20Arayuzu) - https://01-sohbet-arayuzu.netlify.app/
+### [1. Sohbet Arayüzü](https://github.com/AhmetOsmn/frontend-examples/tree/main/01.%20Sohbet%20Arayuzu) - [Demo](https://01-sohbet-arayuzu.netlify.app/)
 ---
 ![Sohbet Arayüzü](./images/frontend-examples-1.png)
 ---
