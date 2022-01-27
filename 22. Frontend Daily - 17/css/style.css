@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Mulish", sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #f1e8e6;
+  padding: 50px;
+}
+
+.divider {
+  height: 50px;
+}
+
+.component--recipe-1 {
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  width: 467px;
+  -webkit-box-shadow: 0 16px 35px -30px #f55951;
+          box-shadow: 0 16px 35px -30px #f55951;
+}
+
+.component--recipe-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.component--recipe-1 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111127;
+}
+
+.component--recipe-1 ul li img {
+  margin-right: 10px;
+}
+
+.component--recipe-2 {
+  background: #fff;
+  width: 353px;
+  padding: 40px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 60px -45px #f55951;
+          box-shadow: 0 20px 60px -45px #f55951;
+}
+
+.component--recipe-2 h6 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111127;
+  margin-bottom: 20px;
+}
+
+.component--recipe-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -5px;
+}
+
+.component--recipe-2 ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #faf2f0;
+  border: 1px solid #edd2cb;
+  height: 40px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 16px;
+  color: #111127;
+  padding: 0 20px;
+}
+
+.component--recipe-2 ul li.active {
+  background: #f55951;
+  border-color: #f55951;
+  color: #fff;
+  -webkit-box-shadow: 0 7px 20px -6px #f55951;
+          box-shadow: 0 7px 20px -6px #f55951;
+}
+
+.component--recipe-3 {
+  background: #f55951;
+  border-radius: 25px;
+  padding: 40px;
+  width: 420px;
+  -webkit-box-shadow: 0 16px 35px -30px #f55951;
+          box-shadow: 0 16px 35px -30px #f55951;
+}
+
+.component--recipe-3 h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.component--recipe-3 form {
+  position: relative;
+}
+
+.component--recipe-3 form .icon {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.component--recipe-3 form input {
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  background: #fff;
+  font-size: 16px;
+  color: #111127;
+  padding: 0 20px 0 60px;
+}
+
+.component--recipe-3 form input::-webkit-input-placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-3 form input:-ms-input-placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-3 form input::-ms-input-placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-3 form input::placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-4 {
+  width: 344px;
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.component--recipe-4 .cover {
+  width: 100%;
+  height: 181px;
+  background: url(../images/sample-1.png) no-repeat center;
+}
+
+.component--recipe-4 .inner {
+  padding: 30px 30px 40px;
+  text-align: center;
+}
+
+.component--recipe-4 .inner .top-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #111127;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.component--recipe-4 .inner h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111127;
+  margin-bottom: 20px;
+}
+
+.component--recipe-4 .inner form input {
+  width: 100%;
+  border: 1px solid #edd2cb;
+  height: 60px;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #111127;
+  caret-color: #f55951;
+  margin-bottom: 10px;
+}
+
+.component--recipe-4 .inner form input:focus {
+  border-color: #f55951;
+}
+
+.component--recipe-4 .inner form input::-webkit-input-placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-4 .inner form input:-ms-input-placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-4 .inner form input::-ms-input-placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-4 .inner form input::placeholder {
+  color: rgba(17, 17, 39, 0.5);
+}
+
+.component--recipe-4 .inner form button {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  color: #fff;
+  background: #f55951;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 7px 20px -6px #f55951;
+          box-shadow: 0 7px 20px -6px #f55951;
+  margin-bottom: 30px;
+}
+
+.component--recipe-4 .inner p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #111127;
+}
+
+.component--recipe-5 {
+  padding: 20px;
+  background: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 20px 60px -45px #f55951;
+          box-shadow: 0 20px 60px -45px #f55951;
+  width: 642px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.component--recipe-5 .favorite-btn {
+  position: absolute;
+  top: 20;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #f2dbd5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 300ms border-color;
+  transition: 300ms border-color;
+}
+
+.component--recipe-5 .favorite-btn:hover {
+  border-color: #f55951;
+}
+
+.component--recipe-5 .favorite-btn:hover svg path {
+  stroke: #f55951;
+}
+
+.component--recipe-5 .favorite-btn svg path {
+  stroke: #111127;
+  -webkit-transition: 300ms stroke;
+  transition: 300ms stroke;
+}
+
+.component--recipe-5 .favorite-btn.active {
+  border-color: #f55951;
+  background: #f55951;
+}
+
+.component--recipe-5 .favorite-btn.active svg path {
+  stroke: #fff;
+}
+
+.component--recipe-5 .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 181px;
+  min-width: 181px;
+}
+
+.component--recipe-5 .image img {
+  width: 100%;
+  height: 249px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.component--recipe-5 .inner {
+  margin-left: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 30px;
+}
+
+.component--recipe-5 .inner .title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111127;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.component--recipe-5 .inner .description {
+  font-size: 16px;
+  color: #111127;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.component--recipe-5 .inner .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.component--recipe-5 .inner .rating .text {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(17, 17, 39, 0.5);
+  margin-left: 10px;
+}
+
+.component--recipe-6 {
+  background: #fff;
+  padding: 40px 84px;
+  border-radius: 25px;
+  width: 993px;
+  position: relative;
+  -webkit-box-shadow: 0 20px 60px -45px #f55951;
+          box-shadow: 0 20px 60px -45px #f55951;
+}
+
+.component--recipe-6 .next-btn,
+.component--recipe-6 .prev-btn {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(242, 219, 213, 0.35);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 300ms background-color;
+  transition: 300ms background-color;
+}
+
+.component--recipe-6 .next-btn.swiper-button-disabled,
+.component--recipe-6 .prev-btn.swiper-button-disabled {
+  opacity: .2;
+}
+
+.component--recipe-6 .next-btn:hover,
+.component--recipe-6 .prev-btn:hover {
+  background: rgba(242, 219, 213, 0.9);
+}
+
+.component--recipe-6 .next-btn {
+  right: 20px;
+}
+
+.component--recipe-6 .prev-btn {
+  left: 20px;
+}
+
+.component--recipe-6 .swiper-slide a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  -webkit-transition: 300ms border-color;
+  transition: 300ms border-color;
+}
+
+.component--recipe-6 .swiper-slide a:hover {
+  border-color: #edd2cb;
+}
+
+.component--recipe-6 .swiper-slide a img {
+  width: 91px;
+  height: 91px;
+  border-radius: 50%;
+}
+
+.component--recipe-6 .swiper-slide a .title {
+  text-align: center;
+  font-size: 14px;
+  color: #111127;
+  margin-top: 17px;
+  line-height: 18px;
+}
+/*# sourceMappingURL=style.css.map */

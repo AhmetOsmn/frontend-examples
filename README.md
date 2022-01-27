@@ -80,6 +80,10 @@
 ---
 ![Frontend Daily-16](./images/frontend-examples-21.png)
 
+### [21. Frontend Daily - 17](https://github.com/AhmetOsmn/frontend-examples/tree/main/21.%20Frontend%20Daily%20-%2017) - [Demo](https://21-frontend-daily-17.netlify.app/)
+---
+![Frontend Daily-16](./images/frontend-examples-22.png)
+
 ### [23. Frontend Daily - 18](https://github.com/AhmetOsmn/frontend-examples/tree/main/23.%20Frontend%20Daily%20-%2018) - [Demo](https://23-frontend-daily-18.netlify.app/)
 ---
 ![Frontend Daily-18](./images/frontend-examples-23.png)
