@@ -87,3 +87,7 @@
 ### [23. Frontend Daily - 18](https://github.com/AhmetOsmn/frontend-examples/tree/main/23.%20Frontend%20Daily%20-%2018) - [Demo](https://23-frontend-daily-18.netlify.app/)
 ---
 ![Frontend Daily-18](./images/frontend-examples-23.png)
+
+### [24. Frontend Daily - 19](https://github.com/AhmetOsmn/frontend-examples/tree/main/24.%20Frontend%20Daily%20-%2019) - [Demo](https://23-frontend-daily-19.netlify.app/)
+---
+![Frontend Daily-19](./images/frontend-examples-24.png)

@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Open Sans", sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #f7f9fd;
+}
+
+.component--feedback {
+  background-color: #fff;
+  padding: 30px 25px;
+  -webkit-box-shadow: 0 24px 27px -15px rgba(52, 87, 220, 0.13);
+          box-shadow: 0 24px 27px -15px rgba(52, 87, 220, 0.13);
+  position: fixed;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.component--feedback.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.component--feedback.position-bc {
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.component--feedback.position-bl {
+  bottom: 20px;
+  left: 20px;
+}
+
+.component--feedback.position-br {
+  bottom: 20px;
+  right: 20px;
+}
+
+.component--feedback.position-tc {
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.component--feedback.position-tl {
+  top: 20px;
+  left: 20px;
+}
+
+.component--feedback.position-tr {
+  top: 20px;
+  right: 20px;
+}
+
+.component--feedback.position-c {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.component--feedback.style1 {
+  width: 380px;
+}
+
+.component--feedback .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.component--feedback .close-btn:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.component--feedback h6 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 15px;
+  color: #202842;
+  text-align: center;
+}
+
+.component--feedback .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.component--feedback .labels input {
+  display: none;
+}
+
+.component--feedback .labels.label-icons li {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.component--feedback .labels.label-icons li.active {
+  background: #fff;
+  -webkit-box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+          box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+}
+
+.component--feedback .labels.label-numbers {
+  margin: 0 -4px;
+}
+
+.component--feedback .labels.label-numbers li {
+  margin: 0 4px;
+  width: 36px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #dcdff1;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #202842;
+  cursor: pointer;
+}
+
+.component--feedback .labels.label-numbers li.active {
+  background: #1a2b63;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(26, 43, 99, 0.7);
+          box-shadow: 0 5px 10px -5px rgba(26, 43, 99, 0.7);
+  color: #fff;
+  border-color: #1a2b63;
+}
+
+.component--feedback .labels-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #5d698d;
+}
+
+.component--feedback .message {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 300ms height, 300ms padding-top;
+  transition: 300ms height, 300ms padding-top;
+}
+
+.component--feedback .message.active {
+  padding-top: 25px;
+  height: 122px;
+}
+
+.component--feedback .message p {
+  font-size: 12px;
+  color: #202842;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.component--feedback .message textarea {
+  width: 100%;
+  border: 1px solid #dcdff1;
+  border-radius: 5px;
+  height: 70px;
+  padding: 10px;
+  font-size: 12px;
+  color: #202842;
+  resize: none;
+  overflow: auto;
+}
+
+.component--feedback .message textarea:focus {
+  border-color: #3457dc;
+  caret-color: #3457dc;
+}
+
+.component--feedback .message textarea::-webkit-input-placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .message textarea:-ms-input-placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .message textarea::-ms-input-placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .message textarea::placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.component--feedback .actions a {
+  font-size: 14px;
+  color: #5d698d;
+}
+
+.component--feedback .actions a:hover {
+  text-decoration: underline;
+}
+
+.component--feedback .actions button {
+  height: 40px;
+  background-color: #3457dc;
+  border-radius: 5px;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.component--feedback .actions button:hover {
+  background: #1d3aa7;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */
