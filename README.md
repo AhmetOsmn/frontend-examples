@@ -1,4 +1,4 @@
-## Herkese merhaba. <br><br>Frontend için yaptığım çalışmaları buraya yüklüyorum. <br><br> Çalışmaların ekran görüntüleri:
+## Herkese merhaba. <br><br>Frontend için yaptığım çalışmaları buraya yüklüyorum. <br><br> Çalışmaların ekran görüntüleri ve demoları:
 ---
 ### [1. Sohbet Arayüzü](https://github.com/AhmetOsmn/frontend-examples/tree/main/01.%20Sohbet%20Arayuzu) --> [Demo](https://01-sohbet-arayuzu.netlify.app/)
 ---
