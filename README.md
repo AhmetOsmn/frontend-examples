@@ -91,3 +91,7 @@
 ### [24. Frontend Daily - 19](https://github.com/AhmetOsmn/frontend-examples/tree/main/24.%20Frontend%20Daily%20-%2019) --> [Demo](https://24-frontend-daily-19.netlify.app/)
 ---
 ![Frontend Daily-19](./images/frontend-examples-24.png)
+
+### [25. Frontend Daily - 20](https://github.com/AhmetOsmn/frontend-examples/tree/main/25.%20Frontend%20Daily%20-%2020) --> [Demo](https://25-frontend-daily-20.netlify.app/)
+---
+![Frontend Daily-20](./images/frontend-examples-25.png)
