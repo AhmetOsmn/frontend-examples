@@ -99,3 +99,7 @@
 ### [26. Frontend Daily - 21](https://github.com/AhmetOsmn/frontend-examples/tree/main/26.%20Frontend%20Daily%20-%2021) --> [Demo](https://26-frontend-daily-21.netlify.app/)
 ---
 ![Frontend Daily-21](./images/frontend-examples-26.png)
+
+### [27. Frontend Daily - 22](https://github.com/AhmetOsmn/frontend-examples/tree/main/27.%20Frontend%20Daily%20-%2022) --> [Demo](https://27-frontend-daily-22.netlify.app/)
+---
+![Frontend Daily-22](./images/frontend-examples-27.png)
