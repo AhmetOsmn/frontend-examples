@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Merriweather:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'IBM Plex Sans', sans-serif;
+    &:focus {
+        outline: 0;
+    }
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background: #eaedf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .show-modal-btn {
+        height: 50px;
+        border-radius: 5px;
+        padding: 0 50px;
+        color: #fff;
+        background: #3B70FF;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+      }
+}
+
+.feedback-modal {
+    width: 567px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 105px 80px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.5);
+    overflow: auto;
+    max-height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms linear all;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .modal-close-btn {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background: #eaedf5;
+        height: 58px;
+        width: 58px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3 {
+        font-family: 'Merriweather', sans-serif;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .feedback-form {
+        >li{
+            margin-bottom: 50px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .title {
+                font-size: 18px;
+                font-weight: 500;
+                padding-bottom: 10px;
+                display: block;
+
+                &.nobold {
+                    font-weight: normal;
+                }
+            }
+
+            textarea {
+                height: 150px;
+                border-radius: 5px;
+                border: 1px solid #a9b2ca;
+                margin-top: 10px;
+                width: 100%;
+                resize: none;
+                padding: 20px;
+                font-size: 16px;
+                font-weight: 400;
+
+                &:focus {
+                    border-color: #3b70ff;
+                }
+            }
+
+            .radio-group {
+                display: flex;
+                align-items: center;
+                padding-top: 15px;
+
+                .radio {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 55px;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    .radio-btn {
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        border: 1px solid #a9b2ca;
+                        min-width: 27px;
+                        margin-right: 15px;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            width: 13px;
+                            height: 13px;
+                            border-radius: 50%;
+                            background: #3B70FF;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            display: none;
+                        }
+                    }
+
+                    .radio-text {
+                        font-size: 16px;
+                    }
+
+                    input {
+                        display: none;
+                        &:checked + .radio-btn {
+                            border-color: #3b70ff;
+                            &::before {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                justify-content: space-between;
+                button {
+                    width: 49%;
+                    height: 65px;
+                    border-radius: 5px;
+                    border: 1px solid #a9b2ca;
+                    background: transparent;
+                    font-size: 18px;
+                    color: #717b94;
+                    font-weight: 600;
+                    cursor: pointer;
+
+                    &[type="submit"] {
+                        background: #3b70ff;
+                        border-color: #3b70ff;
+                        color: #fff;
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                padding-top: 24px;
+                li {
+                    label {
+                        cursor: pointer;
+                        input {
+                            display: none;
+
+                            &:checked + .box {
+                                background: #eaedf5;
+
+                                .face-bg {
+                                    fill: #ffba44;
+                                    &.rank1 {
+                                        fill: #ff4444;
+                                    }
+                                    &.rank2 {
+                                        fill: #ff8944;
+                                    }
+                                    &.rank4 {
+                                        fill: #f3ff44;
+                                    }
+                                    &.rank5 {
+                                        fill: #69ff44;
+                                    }
+                                }
+                            }
+                        }
+                        .box {
+                            width: 76px;
+                            height: 76px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: 300ms background-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
