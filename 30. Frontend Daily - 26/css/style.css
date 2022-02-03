@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+html,
+body {
+    background: #f9eae3;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+body::after {
+    content: '';
+    width: 730px;
+    height: 730px;
+    background: #ffc295;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.divider {
+    height: 50px;
+}
+
+.component {
+    background: #fff;
+    width: 500px;
+    min-width: 500px;
+    padding: 30px  40px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 25px 60px -30px rgba(159,70,28, .6);
+}
+
+.component .project-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(26, 27, 56, .14);
+    height: 89px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.component .project-actions li {
+    display: flex;
+    align-items: center;
+}
+
+.component .project-actions li img {
+    margin-right: 10px;
+}
+
+.component .like-btn {
+    margin-left: auto;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    background: #ffc295;
+    padding: 0 25px;
+    border-radius: 5px;
+    border: 1px solid #1a1b38;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1b38;
+}
+
+.component time {
+    font-size: 16px;
+    color: #1a1b38;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.component h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.component .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px -5px;
+    padding-top: 15px;
+}
+
+.component .tags a {
+    height: 40px;
+    margin: 5px;
+    border: 1px solid #1a1b38;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 15px;
+    border-radius: 5px;
+    color: #1a1b38;
+    align-items: center;
+    transition: 300ms background-color;
+}
+
+.component .tags a:hover {
+    background-color: #f9eae3;
+}
+
+.component .authors {
+    padding-top: 20px;
+    color: #1a1b38;
+}
+
+.component .authors li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.component .authors li a:hover {
+    background: #fc9247;
+}
+
+.component .authors li:last-child{
+    margin-bottom: 0;
+}
+
+.component .authors li img{
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.component .authors li .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.component .authors li .location {
+    font-size: 16px;
+    background: url(../images/icon-location.svg) no-repeat 0;
+    padding-left: 25px;
+}
+
+.component .authors li .follow-btn {
+    margin-left: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: #ffc295;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #1a1b38;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1b38;
+}
