@@ -54,6 +54,10 @@ body::after {
     box-shadow: 0 25px 60px -30px rgba(159,70,28, .6);
 }
 
+.component .last a:hover{
+    background: #fc9247;
+}
+
 .component .project-actions {
     display: flex;
     align-items: center;
