@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  background: #f0f3f9;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.divider {
+  height: 50px;
+}
+
+.component {
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 20px 25px -15px rgba(9, 13, 92, 0.3);
+          box-shadow: 0 20px 25px -15px rgba(9, 13, 92, 0.3);
+  color: #181339;
+  margin: 15px;
+}
+
+.component h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.component p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-bottom: 40px;
+}
+
+.component--1 {
+  width: 373px;
+}
+
+.component--1 .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.component--1 .actions button {
+  height: 48px;
+  padding: 0 30px;
+  border: 1px solid #b6c3dc;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.component--1 .actions button.active {
+  background: #ff7a7f;
+  border-color: #ff7a7f;
+  color: #fff;
+}
+
+.component--2 {
+  width: 300px;
+}
+
+.component--2 ul li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.component--2 ul li label {
+  font-size: 16px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.component--2 ul li label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #b6c3dc;
+  margin-right: 15px;
+  position: relative;
+}
+
+.component--2 ul li label input::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: #6b5cff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+          transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.component--2 ul li label input:checked::before {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.component--3 {
+  width: 567px;
+}
+
+.component--3 .tags {
+  border: 1px solid #b6c3dc;
+  padding: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.component--3 .tags .tag {
+  height: 38px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f0f3f9;
+  padding: 0 6px 0 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.component--3 .tags .tag button {
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  min-width: 26px;
+  margin-left: 4px;
+  cursor: pointer;
+  -webkit-transition: 300ms background-color, 300ms color;
+  transition: 300ms background-color, 300ms color;
+}
+
+.component--3 .tags .tag:hover {
+  background: #ffe5e6;
+  -webkit-box-shadow: 0 13px 10px -10px rgba(146, 0, 6, 0.2);
+          box-shadow: 0 13px 10px -10px rgba(146, 0, 6, 0.2);
+}
+
+.component--3 .tags .tag:hover button {
+  background: #ff7a7f;
+  color: #fff;
+}
+
+.component--3 .tags input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 120px;
+  font-size: 14px;
+  padding: 0 10px;
+  height: 38px;
+}
+/*# sourceMappingURL=style.css.map */
